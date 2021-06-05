@@ -1,0 +1,61 @@
+package com.company;
+import java.util.*;
+ class College
+{
+    public void branch(String str)
+    {
+        System.out.println("Branch is MCA ");
+    }
+    public void year(){
+        System.out.println("First");
+    }
+
+}
+class Ram extends College
+        {
+public void branch(String str)
+        {
+            System.out.println("Ram Branch is BAC:");
+        }
+            @Override
+            public void year(){
+                System.out.println("first");
+            }
+        }
+class Sam extends College
+{
+    public void branch(String str)
+    {
+        System.out.println("Sam Branch is MBA ");
+    }
+    @Override
+    public void year(){
+        System.out.println("Second");
+    }
+}
+class Jon extends College
+{
+    public void branch(String str)
+    {
+        System.out.println("Jon Branch is B.Tech ");
+    }
+    @Override
+    public void year(){
+        System.out.println("Third");
+    }
+}
+public class Main{
+    public static void main(String[] args)
+    {
+        Ram a = new Ram();
+        Sam b = new Sam();
+        Jon c = new Jon();
+        a.branch("MCA");
+        a.year();
+        b.branch("BCA");
+        b.year();
+        c.branch("MBA");
+        c.year();
+        a.branch("CSE");
+    }
+}
