@@ -1,6 +1,6 @@
 package com.company;
 import java.util.*;
- class College
+class College
 {
     public void branch(String str)
     {
@@ -12,20 +12,21 @@ import java.util.*;
 
 }
 class Ram extends College
-        {
-public void branch(String str)
-        {
-            System.out.println("Ram Branch is BAC:");
-        }
-            @Override
-            public void year(){
-                System.out.println("first");
-            }
-        }
+{
+    public void branch(String str)
+    {
+        System.out.println("Ram Branch is BAC:");
+    }
+    @Override
+    public void year(){
+        System.out.println("first");
+    }
+}
 class Sam extends College
 {
     public void branch(String str)
     {
+        super.branch("sttr");
         System.out.println("Sam Branch is MBA ");
     }
     @Override
@@ -37,6 +38,7 @@ class Jon extends College
 {
     public void branch(String str)
     {
+        super.branch("sttr");
         System.out.println("Jon Branch is B.Tech ");
     }
     @Override
